@@ -1,28 +1,60 @@
 body {
-  margin: 0;
-}
-
-.page {
-  min-height: 100vh;
-  display: flex;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
 }
 
 .picture-part {
-  width: 37%;
+    width: 37%;
+    position: relative;
 }
 
 .content-part {
-  width: 63%;
+    display: flex;
+    flex-direction: column;
+    width: 63%;
 }
 
-.picture-part img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     /*--------WHY display: block;?--------*/
     /* Images are inline by default and align to the text baseline,
     which can leave a small gap below them.
     display: block removes that baseline gap. */
-  display: block; 
-  
+    display: block; 
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+
+.form fieldset{
+    display: flex;
+}
+
+.form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-banner{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.logo-banner img{
+    width: 10%;
+    height: auto;
 }
