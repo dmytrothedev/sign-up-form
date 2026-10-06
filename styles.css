@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+}
+
+.picture-part {
+  width: 37%;
+}
+
+.content-part {
+  width: 63%;
+}
+
+.picture-part img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    /*--------WHY display: block;?--------*/
+    /* Images are inline by default and align to the text baseline,
+    which can leave a small gap below them.
+    display: block removes that baseline gap. */
+  display: block; 
+  
+}
