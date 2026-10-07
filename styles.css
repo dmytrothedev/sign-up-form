@@ -4,6 +4,11 @@ body {
     display: flex;
 }
 
+@font-face {
+  font-family: "Norsebold";
+  src: url("./fonts/Norsebold.otf");
+}
+
 .picture-part {
     width: 37%;
     position: relative;
@@ -52,9 +57,11 @@ section{
     align-items: center;
     background: rgba(0, 0, 0, 0.4);
     color: white;
+    font-family: "Norsebold", sans-serif;
+    font-size: 6vw;
 }
 
 .logo-banner img{
-    width: 10%;
+    width: 1em;
     height: auto;
 }
