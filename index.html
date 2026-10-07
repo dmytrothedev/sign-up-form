@@ -8,12 +8,27 @@
 </head>
 <body>
     <div class="picture-part">
-        <img class="background-image" src="./pictures/wet.jpg" alt="Picture of a tropical leaves">
+        <img
+            class="background-image"
+            src="./pictures/wet.jpg"
+            alt=""
+        >
+
         <div class="logo-banner">
             <img src="./pictures/odin-lined.png" alt="The Odin Project Logo">
             <span>ODIN</span>
         </div>
+
+        <p class="photo-credit">
+            Photo by
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
+            on
+            <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">
+                Unsplash
+            </a>
+        </p>
     </div>
+
     <div class="content-part">
         <div class="header">
             <h1>
@@ -21,43 +36,56 @@
                 You know you need something like this in your life to help you realize your deepest dreams.
                 Sign up now to get started.
             </h1>
-            <h2>You know you want to.</h2>
+
+            <h2>You <em>know</em> you want to.</h2>
         </div>
+
         <div class="form">
             <h1>Let's do This!</h1>
+
             <form action="#" method="post">
                 <fieldset>
                     <div>
                         <section>
-                            <label for="first-name">First Name</label>
+                            <label for="first-name">FIRST NAME</label>
                             <input type="text" id="first-name" name="first" required>
                         </section>
+
                         <section>
-                            <label for="email">Email</label>
+                            <label for="email">EMAIL</label>
                             <input type="email" id="email" name="email" required>
                         </section>
+
                         <section>
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" required>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" minlength="8" required>
                         </section>
                     </div>
+
                     <div>
                         <section>
-                            <label for="last-name">Last Name</label>
+                            <label for="last-name">LAST NAME</label>
                             <input type="text" id="last-name" name="last" required>
                         </section>
+
                         <section>
-                            <label for="phone">Phone</label>
+                            <label for="phone">PHONE</label>
                             <input type="tel" id="phone" name="phone">
                         </section>
+
                         <section>
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" id="confirm-password" name="confirm-password" required>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
                         </section>
                     </div>
                 </fieldset>
+
                 <button type="submit">Create Account</button>
-                <p>Already have an account? Log in</p>
+
+                <p>
+                    Already have an account?
+                    <a href="#">Log in</a>
+                </p>
             </form>
         </div>
     </div>
